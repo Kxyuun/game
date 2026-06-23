@@ -271,7 +271,7 @@
       <div class="heart-row">💙🌊💙</div>
       <div class="screen-sub">
         Help the little shark swim through the coral!<br>
-        Something special is waiting at 20 points…
+        Something special is waiting at 10 points…
       </div>
       <div class="screen-sub" style="color:#ffe680;font-weight:700;">
         Tap or press Space to swim up 🐠
@@ -486,10 +486,10 @@ function update(nowMs) {
       p.scored = true;
       score++;
       scoreEl.textContent = score;
-      if (score >= 20) { triggerWin(); return; }
+      if (score >= 10) { triggerWin(); return; }
     }
 
-    if (p.x + PIPE_W < -20) pipes.splice(i, 1);
+    if (p.x + PIPE_W < -10) pipes.splice(i, 1);
   }
 
   // Bubbles
